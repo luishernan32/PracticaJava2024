@@ -15,11 +15,12 @@ public class Uso_Empleado {
     
     public static void main(String[] args) {
         
-        Empleado[] misEmpleados=new Empleado[3];
+        Empleado[] misEmpleados=new Empleado[4];
         
        misEmpleados[0]=new Empleado("Paco Gómez",85000,1990,12,17);
        misEmpleados[1]=new Empleado("Ana Lopez",95000,1993,12,5);
        misEmpleados[2]=new Empleado("Maria Martín",10050,2002,12,06);
+       misEmpleados[3]=new Empleado("Luis");
        
       /* for(int i=0; i<misEmpleados.length;i++)
        {
@@ -77,6 +78,11 @@ class Empleado
         sueldo=sue;
         GregorianCalendar calendario=new GregorianCalendar(agno,mes-1,dia);
         altaContrato=calendario.getTime();
+    }
+    
+    public Empleado(String nom)
+    {
+       this(nom,30000,2000,01,01);
     }
     
     public String dameNombre()

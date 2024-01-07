@@ -48,6 +48,13 @@ public class Coche {
                   +motor +"\n";
     }   
     
+    public String dimeDatos_generales()
+    {
+        return "La plataforma del vehículo tiene" +ruedas+" ruedas "+
+        " Mide "+largo/100+" metros con un ancho de "+ancho+
+                " cm y un peso de plataforma de "+peso_plataforma+ " kg";
+    }
+    
     public String dimeLargo()
     {
         return "El largo del coche es "+largo;
